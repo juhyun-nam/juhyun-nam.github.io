@@ -42,7 +42,7 @@ social-network-links:
 #  facebook: 
   github: juhyun-nam
 #  twitter:
-  rss: true
+  rss: false
 #  reddit: yourname
 #  linkedin: daattali
 #  xing: yourname
