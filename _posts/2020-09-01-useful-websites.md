@@ -6,3 +6,5 @@
   * animation css reference
 * http://www.zzapper.co.uk/
   * tip (vim, zsh)
+* https://web.archive.org/web/20131015230048/http://programmer.97things.oreilly.com/wiki/index.php/97_Things_Every_Programmer_Should_Know
+  * book 97_Things_Every_Programmer_Should_Know reference
