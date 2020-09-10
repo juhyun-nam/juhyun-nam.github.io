@@ -95,6 +95,37 @@ wait %1
 | !$ | !!:$ |
 | !fi:2 | second argument of the most recent command starting with the letters fi. |
 
+## Pattern Matching
+
+| Symbol | ed | ex | vi | sed | gawk | grep | egrep | Action |
+|---|---|---|---|---|---|---|---|---|
+| . | • | • | • | • | • | • | • | Match any character. |
+| * | • | • | • | • | • | • | • | Match zero or more precedingcharacters. |
+| ^ | • | • | • | • | • | • | • | Match beginning of line/string. |
+| $ | • | • | • | • | • | • | • | Match end of line/string. |
+| \ | • | • | • | • | • | • | • | Escape following character. |
+| [ ] | • | • | • | • | • | • | • | Match one from a set. |
+| \\( \\) | • | • | • | • | | • | | Store pattern for later replay. |
+| \n | • | • | • | • | | • | | Replay subpattern in match. |
+| { } | | | | | •P | | •P | Match a range of instances. |
+| \\{ \\} | • | | | • | | • | | Match a range of instances. |
+| \< \> | • | • | •| | | | | Match word’s beginning or end. |
+| + | | | | | • | | • | Match one or more precedingcharacters. |
+| ? | | | | | • | | • | Match zero or one precedingcharacters. |
+| \| | | | | | • | | • | Separate choices to match. |
+| () | | | | | • | | • | Group expressions to match. |                                                
+
+**Basic vs Extended Regular Expressions**
+
+| grep | egrep |
+|---|---|
+| \\? | ? |
+| \\+ | + |
+| \\{ | { |
+| \\| | \| |
+| \\( | ( |
+| \\) | ) |
+
 ## 필수 명령어
 * ls
 * file
