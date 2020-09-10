@@ -13,12 +13,9 @@ man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예�
 | [^...] | any character not enclosed | any character not enclosed |
 | [!...] | any character not enclosed | [...] |
 
-## Redirection
+## Expansion
 
-```
-ls -l /bin/usr 2> ls-error.txt
-ls -l /bin/usr &> ls-output.txt
-ls -l /bin/usr 2> /dev/null
+## 
 
 ## 필수 명령어
 * ls
@@ -36,3 +33,55 @@ ls -l /bin/usr 2> /dev/null
 * whatis
 * alias
 * cat
+* sort
+* uniq
+* wc
+* grep
+* head
+* tail
+* tee
+* echo
+* history
+* id
+* chmod
+* umask
+* su
+* sudo
+* chown
+* chgrp
+* passwd
+* ps
+* top
+* jobs
+* bg
+* fg
+* kill
+* vmstat
+* printenv(env)
+* set
+* export
+* apt, yum
+* ping
+* netstat
+* curl, wget
+* ssh
+* scp
+* sftp
+* locate
+* find
+* xargs
+* touch
+* stat
+* gzip
+* tar
+* zip
+* paste
+* join
+* diff
+* patch
+* sed
+* awk
+* tree
+* mkfifo
+* trap
+* wait
