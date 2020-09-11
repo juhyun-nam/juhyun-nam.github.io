@@ -157,6 +157,23 @@ awk '/abc/ {print $1}' myfil
 awk -F: '{print $1}' /etc/passwd
 echo "Hello Tom" | awk '{$2="Adam"; print $0}'
 ```
+## find
+
+* find는 linux pattern을 사용
+* find의 옵션은 99% single dash (-)
+* -name에서 regex 쓰고 싶다면, -regex
+* grep은 line에서 pattern을 찾아내지만, find는 각 아이템이 pattern에 정확히 일치해야 한다.
+  * file의 중간 부분에서 시작하는 패턴으로 매칭 불가.
+* -path
+* -maxdepth
+
+```
+find . -name 'fi*'
+# find . -name 'fi.*'
+# find . --nam 'fi*'
+find . -regex 'fi.*'
+find . -path './subdirectory/fi*'
+```
 
 ## 필수 명령어
 * ls
