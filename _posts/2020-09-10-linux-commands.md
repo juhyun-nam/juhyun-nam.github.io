@@ -126,6 +126,38 @@ wait %1
 | \\( | ( |
 | \\) | ) |
 
+## sed
+
+addressing
+| Command | Action performed |
+| --- | --- |
+| s/xx/yy/g | Substitute on all lines (all occurrences). |
+| /BSD/d | Delete lines containing BSD. |
+| /^BEGIN/,/^END/p | Print betweenBEGIN andEND, inclusive.
+| /SAVE/!d | Delete any line that doesn’t containSAVE.
+| /BEGIN/,/END/!s/xx/yy/g | Substitute on all lines, except betweenBEGIN andEND.|
+
+```
+sed 's/unix/linux/' geekfile.txt
+sed 's/unix/linux/g' geekfile.txt
+sed '3 s/unix/linux/' geekfile.txt
+sed 's/unix/linux/p' geekfile.txt
+sed '/pattern/d' filename.txt
+```
+
+## awk
+
+* $0 (entire input record)
+* $n (nth field
+* NF (number of fields)
+* NR (number of the current record)
+
+```
+awk '/abc/ {print $1}' myfil
+awk -F: '{print $1}' /etc/passwd
+echo "Hello Tom" | awk '{$2="Adam"; print $0}'
+```
+
 ## 필수 명령어
 * ls
 * file
