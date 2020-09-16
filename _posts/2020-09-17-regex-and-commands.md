@@ -41,6 +41,7 @@
 | ed | BRE |
 | grep | BRE |
 | sed | BRE |
+| vi | BRE |
 | awk | ERE |
 | egrep | ERE |
 
