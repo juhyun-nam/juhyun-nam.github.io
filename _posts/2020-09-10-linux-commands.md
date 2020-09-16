@@ -1,8 +1,11 @@
 # Linux Command 정리
 
+
 man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예제들
 
+
 ## Globbing and Regex
+
 
 | | Glob | Regex |
 |--- | :---: | :---: |
@@ -13,8 +16,11 @@ man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예�
 | [^...] | any character not enclosed | any character not enclosed |
 | [!...] | any character not enclosed | [...] |
 
+
 ## Bash
 ### Bash Shell Features
+
+
 * Brace Expansion
 * Tilde Expansion
 * Shell Parameter Expansion
@@ -49,7 +55,9 @@ $(( expression ))
 !(pattern-list) # Matches anything except one of the given patterns.
 ```
 
+
 ### Job Control
+
 
 |jobspec||
 |---|---|
@@ -68,7 +76,9 @@ kill %1
 wait %1
 ```
 
+
 ### Command Line Editing
+
 
 |Command||
 |---|---|
@@ -83,7 +93,9 @@ wait %1
 | C-s | search forward in the history |
 | C-g | abort an incremental search and restore the original line. |
 
+
 ### Using History Interactively
+
 
 |Command||
 |---|---|
@@ -95,7 +107,9 @@ wait %1
 | !$ | !!:$ |
 | !fi:2 | second argument of the most recent command starting with the letters fi. |
 
+
 ## Pattern Matching
+
 
 | Symbol | ed | ex | vi | sed | gawk | grep | egrep | Action |
 |---|---|---|---|---|---|---|---|---|
@@ -115,7 +129,9 @@ wait %1
 | \| | | | | | • | | • | Separate choices to match. |
 | () | | | | | • | | • | Group expressions to match. |                                                
 
+
 **Basic vs Extended Regular Expressions**
+
 
 | grep | egrep |
 |---|---|
@@ -126,9 +142,11 @@ wait %1
 | \\( | ( |
 | \\) | ) |
 
+
 ## sed
 
 addressing
+
 | Command | Action performed |
 | --- | --- |
 | s/xx/yy/g | Substitute on all lines (all occurrences). |
@@ -145,6 +163,7 @@ sed 's/unix/linux/p' geekfile.txt
 sed '/pattern/d' filename.txt
 ```
 
+
 ## awk
 
 * $0 (entire input record)
@@ -157,6 +176,8 @@ awk '/abc/ {print $1}' myfil
 awk -F: '{print $1}' /etc/passwd
 echo "Hello Tom" | awk '{$2="Adam"; print $0}'
 ```
+
+
 ## find
 
 * find는 linux pattern을 사용
@@ -174,6 +195,7 @@ find . -name 'fi*'
 find . -regex 'fi.*'
 find . -path './subdirectory/fi*'
 ```
+
 
 ## 필수 명령어
 * ls
