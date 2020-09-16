@@ -68,8 +68,8 @@ kill %1
 wait %1
 ```
 
-
 ### Command Line Editing
+
 |Command||
 |---|---|
 | C-arrow | move forward/backword a word |
@@ -122,7 +122,7 @@ wait %1
 | \\? | ? |
 | \\+ | + |
 | \\{ | { |
-| \\| | \| |
+| \\\| | \| |
 | \\( | ( |
 | \\) | ) |
 
