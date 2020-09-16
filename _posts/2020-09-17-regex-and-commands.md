@@ -47,8 +47,7 @@
 
 # sed
 
-```
-```
+http://www.pement.org/sed/sed1line.txt
 
 # awk
 
@@ -57,12 +56,7 @@
 * NF (number of fields)
 * NR (number of the current record)
 
-```
-awk '/abc/ {print $1}' myfil
-awk -F: '{print $1}' /etc/passwd
-echo "Hello Tom" | awk '{$2="Adam"; print $0}'
-```
-
+http://www.pement.org/awk/awk1line.txt
 
 # find
 
