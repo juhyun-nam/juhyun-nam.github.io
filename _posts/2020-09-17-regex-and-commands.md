@@ -1,22 +1,18 @@
-# Symbol
+# Basic Regex Symbol
 
 | Symbol | Action |
 |---|---|
 | . | Match any character. |
-| * | Match zero or more precedingcharacters. |
-| ^ | Match beginning of line/string. |
-| $ | Match end of line/string. |
-| \ | Escape following character. |
 | [ ] | Match one from a set. |
+| ^, $ | Match beginning/end of line. |
+| \<, \> | Match word’s beginning/end. |
+| \\{ \\} | Match a range of instances. |
+| ? | \{0,1\} |
+| * | \{0,\} |
+| + | \{1,\} |
 | \\( \\) | Store pattern for later replay. |
 | \n | Replay subpattern in match. |
-| { } | Match a range of instances. |
-| \\{ \\} | Match a range of instances. |
-| \< \> | Match word’s beginning or end. |
-| + | Match one or more precedingcharacters. |
-| ? | Match zero or one precedingcharacters. |
 | \| | Separate choices to match. |
-| () | Group expressions to match. |
 
 # Globbing and Regex
 
