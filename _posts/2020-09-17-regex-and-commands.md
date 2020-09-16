@@ -3,16 +3,16 @@
 | Symbol | Action |
 |---|---|
 | . | Match any character. |
+| * | \{0,\} |
 | [ ] | Match one from a set. |
 | ^, $ | Match beginning/end of line. |
 | \<, \> | Match word’s beginning/end. |
 | \\{ \\} | Match a range of instances. |
-| ? | \{0,1\} |
-| * | \{0,\} |
-| + | \{1,\} |
+| \\? | \{0,1\} |
+| \\+ | \{1,\} |
+| \\\| | Separate choices to match. |
 | \\( \\) | Store pattern for later replay. |
 | \n | Replay subpattern in match. |
-| \| | Separate choices to match. |
 
 # Globbing and Regex
 
@@ -29,12 +29,11 @@
 
 | BRE | ERE |
 |---|---|
+| \\{ | { |
 | \\? | ? |
 | \\+ | + |
-| \\{ | { |
 | \\\| | \| |
-| \\( | ( |
-| \\) | ) |
+| \\( \\) | ( ) |
 
 | command | |
 |---|---|
