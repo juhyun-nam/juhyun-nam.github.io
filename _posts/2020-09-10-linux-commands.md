@@ -1,8 +1,26 @@
 man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예제들
 
+# Regex
+
+| Symbol | Action |
+|---|---|
+| . | Match any character. |
+| * | Match zero or more precedingcharacters. |
+| ^ | Match beginning of line/string. |
+| $ | Match end of line/string. |
+| \ | Escape following character. |
+| [ ] | Match one from a set. |
+| \\( \\) | Store pattern for later replay. |
+| \n | Replay subpattern in match. |
+| { } | Match a range of instances. |
+| \\{ \\} | Match a range of instances. |
+| \< \> | Match word’s beginning or end. |
+| + | Match one or more precedingcharacters. |
+| ? | Match zero or one precedingcharacters. |
+| \| | Separate choices to match. |
+| () | Group expressions to match. |
 
 # Globbing and Regex
-
 
 | | Glob | Regex |
 |--- | :---: | :---: |
@@ -13,10 +31,27 @@ man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예�
 | [^...] | any character not enclosed | any character not enclosed |
 | [!...] | any character not enclosed | [...] |
 
+# Basic vs Extended Regular Expressions
+
+| BRE | ERE |
+|---|---|
+| \\? | ? |
+| \\+ | + |
+| \\{ | { |
+| \\\| | \| |
+| \\( | ( |
+| \\) | ) |
+
+| command | |
+|---|---|
+| ed | BRE |
+| grep | BRE |
+| sed | BRE |
+| awk | ERE |
+| egrep | ERE |
 
 # Bash
 ## Bash Shell Features
-
 
 * Brace Expansion
 * Tilde Expansion
@@ -52,9 +87,7 @@ $(( expression ))
 !(pattern-list) # Matches anything except one of the given patterns.
 ```
 
-
 ## Job Control
-
 
 |jobspec||
 |---|---|
@@ -73,9 +106,7 @@ kill %1
 wait %1
 ```
 
-
 ## Command Line Editing
-
 
 |Command||
 |---|---|
@@ -90,9 +121,7 @@ wait %1
 | C-s | search forward in the history |
 | C-g | abort an incremental search and restore the original line. |
 
-
 ## Using History Interactively
-
 
 |Command||
 |---|---|
@@ -104,40 +133,6 @@ wait %1
 | !$ | !!:$ |
 | !fi:2 | second argument of the most recent command starting with the letters fi. |
 
-
-# Pattern Matching
-
-
-| Symbol | ed | ex | vi | sed | gawk | grep | egrep | Action |
-|---|---|---|---|---|---|---|---|---|
-| . | • | • | • | • | • | • | • | Match any character. |
-| * | • | • | • | • | • | • | • | Match zero or more precedingcharacters. |
-| ^ | • | • | • | • | • | • | • | Match beginning of line/string. |
-| $ | • | • | • | • | • | • | • | Match end of line/string. |
-| \ | • | • | • | • | • | • | • | Escape following character. |
-| [ ] | • | • | • | • | • | • | • | Match one from a set. |
-| \\( \\) | • | • | • | • | | • | | Store pattern for later replay. |
-| \n | • | • | • | • | | • | | Replay subpattern in match. |
-| { } | | | | | •P | | •P | Match a range of instances. |
-| \\{ \\} | • | | | • | | • | | Match a range of instances. |
-| \< \> | • | • | •| | | | | Match word’s beginning or end. |
-| + | | | | | • | | • | Match one or more precedingcharacters. |
-| ? | | | | | • | | • | Match zero or one precedingcharacters. |
-| \| | | | | | • | | • | Separate choices to match. |
-| () | | | | | • | | • | Group expressions to match. |                                                
-
-
-**Basic vs Extended Regular Expressions**
-
-
-| grep | egrep |
-|---|---|
-| \\? | ? |
-| \\+ | + |
-| \\{ | { |
-| \\\| | \| |
-| \\( | ( |
-| \\) | ) |
 
 
 # sed
