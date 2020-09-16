@@ -1,10 +1,7 @@
-# Linux Command 정리
-
-
 man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예제들
 
 
-## Globbing and Regex
+# Globbing and Regex
 
 
 | | Glob | Regex |
@@ -17,8 +14,8 @@ man으로 정리 되지 않는, 혼동되거나 잊기 쉬운 옵션 혹은 예�
 | [!...] | any character not enclosed | [...] |
 
 
-## Bash
-### Bash Shell Features
+# Bash
+## Bash Shell Features
 
 
 * Brace Expansion
@@ -56,7 +53,7 @@ $(( expression ))
 ```
 
 
-### Job Control
+## Job Control
 
 
 |jobspec||
@@ -77,7 +74,7 @@ wait %1
 ```
 
 
-### Command Line Editing
+## Command Line Editing
 
 
 |Command||
@@ -94,7 +91,7 @@ wait %1
 | C-g | abort an incremental search and restore the original line. |
 
 
-### Using History Interactively
+## Using History Interactively
 
 
 |Command||
@@ -108,7 +105,7 @@ wait %1
 | !fi:2 | second argument of the most recent command starting with the letters fi. |
 
 
-## Pattern Matching
+# Pattern Matching
 
 
 | Symbol | ed | ex | vi | sed | gawk | grep | egrep | Action |
@@ -143,7 +140,7 @@ wait %1
 | \\) | ) |
 
 
-## sed
+# sed
 
 addressing
 
@@ -164,7 +161,7 @@ sed '/pattern/d' filename.txt
 ```
 
 
-## awk
+# awk
 
 * $0 (entire input record)
 * $n (nth field
@@ -178,7 +175,7 @@ echo "Hello Tom" | awk '{$2="Adam"; print $0}'
 ```
 
 
-## find
+# find
 
 * find는 linux pattern을 사용
 * find의 옵션은 99% single dash (-)
@@ -197,7 +194,7 @@ find . -path './subdirectory/fi*'
 ```
 
 
-## 필수 명령어
+# 필수 명령어
 * ls
 * file
 * less
