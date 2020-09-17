@@ -40,9 +40,11 @@
 | ed | BRE |
 | grep | BRE |
 | sed | BRE |
-| vi | BRE |
+| vi | BRE(almost) |
+| less | ERE |
 | awk | ERE |
-| egrep | ERE |
+| grep -E | ERE |
+| sed -E | ERE |
 
 # sed
 
