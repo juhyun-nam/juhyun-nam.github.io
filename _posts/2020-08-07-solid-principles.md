@@ -1,3 +1,7 @@
+---
+layout: post
+title: SOLID principle
+---
 # SOLID
 
 ## 단일 책임 원칙(SRP)

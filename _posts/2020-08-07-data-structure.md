@@ -1,3 +1,7 @@
+---
+layout: post
+title: data structure
+---
 # Data Structure
 
 ## Linked List

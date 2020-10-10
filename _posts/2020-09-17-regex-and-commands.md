@@ -1,3 +1,7 @@
+---
+layout: post
+title: regex and commands
+---
 # Basic Regex Symbol
 
 | Symbol | Action |
