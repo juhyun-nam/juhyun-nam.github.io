@@ -14,3 +14,5 @@ title: useful websites
   * book 97_Things_Every_Programmer_Should_Know reference
 * http://www.cpt.univ-mrs.fr/~crepieux/stock/bash.quickref.pdf
   * base reference card
+* https://www.diagrams.net
+  * diagrams
