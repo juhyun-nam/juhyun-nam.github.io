@@ -16,3 +16,5 @@ title: useful websites
   * base reference card
 * https://www.diagrams.net
   * diagrams
+* https://devhints.io/semver
+  * semantic versioning cheatsheet
